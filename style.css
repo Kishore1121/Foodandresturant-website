@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--textcolor);
+    width: 100%;
+}
+
+:root{
+    --bgcolor:#1e1c2a;
+    --textcolor:#fff;
+    --maincolor:#ff702a;
+}
+
+body{
+    background-color: var(--bgcolor);
+}
+/* header and navbar */
+.headercontent{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.navbar {
+    display: flex;
+    margin: 0 18rem;
+}
+
+.navbar li a {
+    color: var(--textcolor);
+    font-weight: 800;
+}
+
+.logo{
+    margin-left: 8rem;
+    color: var(--maincolor);
+    font-size: 4vmin;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: var(--maincolor);
+}
+
+/* maincontent */
+
+.maincontent{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    /* background-color: red; */
+    
+
+}
+.overviewcontent{
+    position: relative;
+    left: 15rem;
+}
+.overviewimagecontent{
+    width: 60%;
+    /* position: relative;
+    right: 8rem; */
+    
+}
+.overviewcontent h1{
+    font-size: 9vmin;
+    color: var(--maincolor);
+    margin-bottom: 2rem;
+}
+.overviewcontent h3{
+    font-size: 3vmin;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+.ctn{
+    background-color: var(--maincolor);
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+.ctn:hover{
+    transform: scale(1);
+    transition: transfrom 0.5s;
+}
+
+/* About food */
+
+.aboutfood{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-bottom: 10rem;
+    /* background-color: aqua; */
+}
+
+.aboutimage{
+    width: 40%;
+    position: relative;
+    left: 13rem;
+}
+
+.aboutcontent{
+    position: relative;
+    right: 8rem;
+}
+
+.aboutcontent h6{
+    color: var(--maincolor);
+    margin-bottom: 0.5rem;
+}
+
+.aboutcontent h2{
+    margin-bottom: 1rem;
+}
+
+.aboutcontent p{
+    margin-bottom: 2rem;
+}
+
+.foodmenucontent{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 10rem;
+    /* background-color: aqua; */
+    
+}
+.menutopic{
+    text-align: center;
+    max-height: 10vh;
+    /* background-color: grey; */
+}
+.menutopic h5{
+    color: var(--maincolor);
+    margin-bottom: 0.5rem;
+}
+.menutopic h2{
+    font-size: 5vmin;
+    font-weight: bolder;
+    margin-bottom:5rem;
+}
+.menuimage{
+     display: flex; 
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     /* background-color: red; */
+    
+}
+.menuimage img{
+    width: 20%;
+}
+
+#image1 {
+    width: 20%;
+    padding: 3rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5%;
+}
+.menuimage h5{
+    color: rgba(128, 128, 128, 0.900);
+    margin-bottom: 0.5rem;
+}
+
+.menuimage h6{
+    color: var(--maincolor);
+}
+#image1 img{    
+    width:60%
+}
+#image1 h3{
+    color: var(--bgcolor);
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+#image2 {
+    width: 20%;
+    padding: 3rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5%;
+}
+#image2 img{    
+    width:60%
+}
+#image2 h3{
+    color: var(--bgcolor);
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+#image3 {
+    width: 20%;
+    padding:3rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5%;
+}
+#image3 img{
+    width:60%
+    
+}
+#image3 h3{
+    color: var(--bgcolor);
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+/* Service content */
+
+.servicecontent{
+    margin-bottom: 2rem;
+}
+
+.serviceconcept img{
+    width:15%;
+    margin-bottom: 1rem;
+}
+
+.serviceheading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.serviceheading h4{
+    color: var(--maincolor);
+}
+
+.serviceheading h1{
+    font-size: 4vmin;
+    color: #fff;
+}
+
+.serviceconcept {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.serviceconcept h3{
+    color: var(--maincolor);
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+.qualityfood {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    width: 80%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.qualityfood h2,h1{
+    color: var(--bgcolor);
+}
+
+.qualityfood h2{
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+}
+
+.qualityfood h1{
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.2px;
+    font-weight: bolder;
+}
+
+.qualityfood a{
+    margin: 0 auto;
+    width: 8%;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px 80px;
+    margin: 0;
+    text-align: center;
+}
+.footer p{
+    color: #fff;
+    margin: 10px auto;
+}
+
+
